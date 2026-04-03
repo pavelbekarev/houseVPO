@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 8px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1110px;
+
+  @media (max-width: 1130px) {
+    padding: 0 2rem;
+    max-width: 1100px;
+    width: 100%;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.logo__title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 12%;
+  font-family: "Raleway-Regular";
+}
+
+.title {
+  font-size: 4.5rem;
+  font-family: "PlayfairDisplay-Bold";
+  color: #d4c17f;
+}

@@ -1,0 +1,10 @@
+@import "./global.css";
+@import "./Header/header.css";
+@import "./Advantages/advantages.css";
+@import "./fonts.css";
+@import "/styles/Apartments/apartments.css";
+@import "/styles/Overview/overview.css";
+@import "/styles/Video/video.css";
+@import "/styles/Map/map.css";
+@import "/styles/FAQ/faq.css";
+@import "/styles/Footer/footer.css";

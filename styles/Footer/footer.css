@@ -1,0 +1,27 @@
+.footer {
+  background-color: #2d343c;
+  min-height: 34rem;
+  padding-top: 7.5rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.footer__menu {
+  flex-flow: column;
+  gap: 1.75rem;
+}
+
+.footer__menu-socials {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 2.5rem;
+}
+
+.footer__link {
+  cursor: pointer;
+}

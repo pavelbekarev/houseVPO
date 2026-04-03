@@ -1,0 +1,77 @@
+.apartments {
+  position: relative;
+  padding-top: 15rem;
+  min-height: 80vh;
+  background-color: #242b33;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.apartments::before {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 20%;
+  width: 40%;
+  height: 40%;
+  background: url(/assets/III.svg) no-repeat;
+}
+
+.apartments__content {
+  margin-top: 12.5rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.75rem;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-flow: row wrap;
+    display: none;
+  }
+}
+
+.apartments__item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.apartments__item-img {
+  pointer-events: none;
+  z-index: -1;
+}
+
+.apartments__text {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  font-size: 3rem;
+  font-family: "Raleway-Regular";
+}
+
+.mySwiper {
+  display: none !important;
+
+  @media (max-width: 1200px) {
+    display: flex !important;
+  }
+}
+
+.swiper {
+  display: none;
+  margin-top: 12.5rem;
+  max-width: 800px;
+  height: 400px;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

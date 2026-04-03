@@ -1,0 +1,99 @@
+.overview {
+  position: relative;
+  min-height: 70rem;
+  height: 100%;
+  width: 100%;
+  background: url(/assets/overview__bg.png) no-repeat;
+  background-size: cover;
+  padding-top: 22.5rem;
+
+  @media (max-width: 960px) {
+    padding-top: 0;
+  }
+}
+
+.overview__text {
+  font-size: 2rem;
+  font-family: "Raleway-Regular";
+}
+
+.overview__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 960px) {
+    display: flex;
+    flex-flow: column;
+    gap: 5rem;
+  }
+}
+
+.overview__textContent {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 3.75rem; */
+}
+
+.form {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3.75rem;
+}
+
+.form__input {
+  max-height: 6.25rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #bebebe;
+  border: none;
+  outline: none;
+}
+
+.form__text {
+  font-size: 1.625rem;
+  text-align: center;
+  font-family: "Raleway-Regular";
+  color: #e7e7e7;
+}
+
+.form__button {
+  max-height: 6.25rem;
+  width: 100%;
+  background-color: #d4c17f;
+  color: #fff;
+  font-family: "Raleway-Bold";
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(212, 193, 127, 0.2);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(212, 193, 127, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(212, 193, 127, 0.2);
+}
+
+.form__top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.75rem;
+}
+
+.form__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.75rem;
+}
+
+@media (max-width: 490px) {
+  .form__top,
+  .form__bottom {
+    display: flex;
+    flex-flow: column;
+  }
+}

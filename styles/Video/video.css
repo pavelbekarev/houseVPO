@@ -1,0 +1,33 @@
+.video {
+  position: relative;
+  background-color: #242b33;
+  min-height: 50vh;
+  overflow-x: hidden;
+  overflow-y: clip;
+  padding: 12.5rem 0;
+}
+
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  width: 418px;
+  height: 507px;
+  background: url(/assets/IV.svg) no-repeat;
+
+  @media (max-width: 1000px) {
+    top: 40%;
+    right: -20%;
+  }
+}
+
+.video__videoPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90rem;
+  max-height: 81.25rem;
+  object-fit: cover;
+  margin: 0 auto;
+}

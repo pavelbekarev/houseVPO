@@ -1,0 +1,22 @@
+.faq {
+  position: relative;
+  background-color: #242b33;
+  height: 40vh;
+  overflow-x: hidden;
+  margin-bottom: 6.25;
+}
+
+.faq__form {
+  margin-top: 6.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 960px) {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.form__button {
+  padding: 1.5rem 2rem;
+}

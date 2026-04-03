@@ -1,0 +1,32 @@
+.map {
+  position: relative;
+  height: 100vh;
+  background-color: #242b33;
+  padding-top: 22.5rem;
+  overflow: hidden;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  top: 28%;
+  left: 12%;
+  width: 418px;
+  height: 507px;
+  background: url(/assets/V.svg) no-repeat;
+
+  @media (max-width: 1600px) {
+    top: 70%;
+  }
+}
+
+.map__wrapper {
+  margin-top: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map__mapFrame {
+  width: 100%;
+}
